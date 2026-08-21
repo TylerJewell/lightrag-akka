@@ -1,0 +1,5124 @@
+[
+  {
+    "name": "hybrid-both-branches",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "local-only",
+    "query": "what connects these things",
+    "mode": "local",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [],
+    "chunkHits": []
+  },
+  {
+    "name": "global-only",
+    "query": "what connects these things",
+    "mode": "global",
+    "llKeywords": [],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "mix-adds-the-chunk-index",
+    "query": "what connects these things",
+    "mode": "mix",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": [
+      "ca",
+      "cf"
+    ]
+  },
+  {
+    "name": "local-mode-with-no-low-level-keywords",
+    "query": "what connects these things",
+    "mode": "local",
+    "llKeywords": [],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "global-mode-with-no-high-level-keywords",
+    "query": "what connects these things",
+    "mode": "global",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "no-keywords-at-either-level",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [],
+    "hlKeywords": [],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "relation-found-in-both-directions",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "B|A",
+      "E|F"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "tiny-entity-budget",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 40,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "tiny-chunk-budget",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 30,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "chunk-top-k-of-two",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 2,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "related-chunk-number-of-one",
+    "query": "what connects these things",
+    "mode": "hybrid",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [
+      "theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 1
+    },
+    "nodes": [
+      {
+        "entityName": "A",
+        "entityType": "T",
+        "description": "description of A",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ca"
+        ]
+      },
+      {
+        "entityName": "B",
+        "entityType": "T",
+        "description": "description of B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cb"
+        ]
+      },
+      {
+        "entityName": "C",
+        "entityType": "T",
+        "description": "description of C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cc"
+        ]
+      },
+      {
+        "entityName": "D",
+        "entityType": "T",
+        "description": "description of D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cd"
+        ]
+      },
+      {
+        "entityName": "E",
+        "entityType": "T",
+        "description": "description of E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "ce"
+        ]
+      },
+      {
+        "entityName": "F",
+        "entityType": "T",
+        "description": "description of F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cf"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "A",
+        "tgt": "B",
+        "weight": 1.0,
+        "description": "A relates to B",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ]
+      },
+      {
+        "src": "A",
+        "tgt": "C",
+        "weight": 2.0,
+        "description": "A relates to C",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ]
+      },
+      {
+        "src": "B",
+        "tgt": "D",
+        "weight": 5.0,
+        "description": "B relates to D",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ]
+      },
+      {
+        "src": "C",
+        "tgt": "E",
+        "weight": 1.0,
+        "description": "C relates to E",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c4"
+        ]
+      },
+      {
+        "src": "E",
+        "tgt": "F",
+        "weight": 3.0,
+        "description": "E relates to F",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c5"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "content": "the passage that mentions A",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "cb",
+        "content": "the passage that mentions B",
+        "filePath": "b.md"
+      },
+      {
+        "chunkId": "cc",
+        "content": "the passage that mentions C",
+        "filePath": "c.md"
+      },
+      {
+        "chunkId": "cd",
+        "content": "the passage that mentions D",
+        "filePath": "d.md"
+      },
+      {
+        "chunkId": "ce",
+        "content": "the passage that mentions E",
+        "filePath": "e.md"
+      },
+      {
+        "chunkId": "cf",
+        "content": "the passage that mentions F",
+        "filePath": "f.md"
+      },
+      {
+        "chunkId": "c1",
+        "content": "the passage behind relation 1",
+        "filePath": "rel1.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "the passage behind relation 2",
+        "filePath": "rel2.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "the passage behind relation 3",
+        "filePath": "rel3.md"
+      },
+      {
+        "chunkId": "c4",
+        "content": "the passage behind relation 4",
+        "filePath": "rel4.md"
+      },
+      {
+        "chunkId": "c5",
+        "content": "the passage behind relation 5",
+        "filePath": "rel5.md"
+      }
+    ],
+    "entityHits": [
+      "A",
+      "C"
+    ],
+    "relationHits": [
+      "E|F",
+      "A|B"
+    ],
+    "chunkHits": []
+  },
+  {
+    "name": "sixty-node-graph",
+    "query": "what connects these things across the whole graph",
+    "mode": "mix",
+    "llKeywords": [
+      "specific terms"
+    ],
+    "hlKeywords": [
+      "broad theme"
+    ],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "N00",
+        "entityType": "T",
+        "description": "a description of node 0, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 0, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k000",
+          "k001",
+          "k002"
+        ]
+      },
+      {
+        "entityName": "N01",
+        "entityType": "T",
+        "description": "a description of node 1, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 1, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k003",
+          "k004",
+          "k005"
+        ]
+      },
+      {
+        "entityName": "N02",
+        "entityType": "T",
+        "description": "a description of node 2, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 2, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k006",
+          "k007",
+          "k008"
+        ]
+      },
+      {
+        "entityName": "N03",
+        "entityType": "T",
+        "description": "a description of node 3, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 3, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k009",
+          "k010",
+          "k011"
+        ]
+      },
+      {
+        "entityName": "N04",
+        "entityType": "T",
+        "description": "a description of node 4, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 4, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k012",
+          "k013",
+          "k014"
+        ]
+      },
+      {
+        "entityName": "N05",
+        "entityType": "T",
+        "description": "a description of node 5, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 5, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k015",
+          "k016",
+          "k017"
+        ]
+      },
+      {
+        "entityName": "N06",
+        "entityType": "T",
+        "description": "a description of node 6, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 6, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k018",
+          "k019",
+          "k020"
+        ]
+      },
+      {
+        "entityName": "N07",
+        "entityType": "T",
+        "description": "a description of node 7, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 7, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k021",
+          "k022",
+          "k023"
+        ]
+      },
+      {
+        "entityName": "N08",
+        "entityType": "T",
+        "description": "a description of node 8, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 8, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k024",
+          "k025",
+          "k026"
+        ]
+      },
+      {
+        "entityName": "N09",
+        "entityType": "T",
+        "description": "a description of node 9, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 9, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k027",
+          "k028",
+          "k029"
+        ]
+      },
+      {
+        "entityName": "N10",
+        "entityType": "T",
+        "description": "a description of node 10, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 10, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k030",
+          "k031",
+          "k032"
+        ]
+      },
+      {
+        "entityName": "N11",
+        "entityType": "T",
+        "description": "a description of node 11, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 11, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k033",
+          "k034",
+          "k035"
+        ]
+      },
+      {
+        "entityName": "N12",
+        "entityType": "T",
+        "description": "a description of node 12, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 12, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k036",
+          "k037",
+          "k038"
+        ]
+      },
+      {
+        "entityName": "N13",
+        "entityType": "T",
+        "description": "a description of node 13, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 13, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k039",
+          "k040",
+          "k041"
+        ]
+      },
+      {
+        "entityName": "N14",
+        "entityType": "T",
+        "description": "a description of node 14, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 14, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k042",
+          "k043",
+          "k044"
+        ]
+      },
+      {
+        "entityName": "N15",
+        "entityType": "T",
+        "description": "a description of node 15, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 15, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k045",
+          "k046",
+          "k047"
+        ]
+      },
+      {
+        "entityName": "N16",
+        "entityType": "T",
+        "description": "a description of node 16, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 16, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k048",
+          "k049",
+          "k050"
+        ]
+      },
+      {
+        "entityName": "N17",
+        "entityType": "T",
+        "description": "a description of node 17, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 17, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k051",
+          "k052",
+          "k053"
+        ]
+      },
+      {
+        "entityName": "N18",
+        "entityType": "T",
+        "description": "a description of node 18, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 18, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k054",
+          "k055",
+          "k056"
+        ]
+      },
+      {
+        "entityName": "N19",
+        "entityType": "T",
+        "description": "a description of node 19, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 19, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k057",
+          "k058",
+          "k059"
+        ]
+      },
+      {
+        "entityName": "N20",
+        "entityType": "T",
+        "description": "a description of node 20, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 20, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k060",
+          "k061",
+          "k062"
+        ]
+      },
+      {
+        "entityName": "N21",
+        "entityType": "T",
+        "description": "a description of node 21, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 21, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k063",
+          "k064",
+          "k065"
+        ]
+      },
+      {
+        "entityName": "N22",
+        "entityType": "T",
+        "description": "a description of node 22, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 22, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k066",
+          "k067",
+          "k068"
+        ]
+      },
+      {
+        "entityName": "N23",
+        "entityType": "T",
+        "description": "a description of node 23, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 23, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k069",
+          "k070",
+          "k071"
+        ]
+      },
+      {
+        "entityName": "N24",
+        "entityType": "T",
+        "description": "a description of node 24, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 24, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k072",
+          "k073",
+          "k074"
+        ]
+      },
+      {
+        "entityName": "N25",
+        "entityType": "T",
+        "description": "a description of node 25, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 25, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k075",
+          "k076",
+          "k077"
+        ]
+      },
+      {
+        "entityName": "N26",
+        "entityType": "T",
+        "description": "a description of node 26, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 26, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k078",
+          "k079",
+          "k080"
+        ]
+      },
+      {
+        "entityName": "N27",
+        "entityType": "T",
+        "description": "a description of node 27, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 27, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k081",
+          "k082",
+          "k083"
+        ]
+      },
+      {
+        "entityName": "N28",
+        "entityType": "T",
+        "description": "a description of node 28, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 28, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k084",
+          "k085",
+          "k086"
+        ]
+      },
+      {
+        "entityName": "N29",
+        "entityType": "T",
+        "description": "a description of node 29, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 29, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k087",
+          "k088",
+          "k089"
+        ]
+      },
+      {
+        "entityName": "N30",
+        "entityType": "T",
+        "description": "a description of node 30, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 30, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k090",
+          "k091",
+          "k092"
+        ]
+      },
+      {
+        "entityName": "N31",
+        "entityType": "T",
+        "description": "a description of node 31, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 31, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k093",
+          "k094",
+          "k095"
+        ]
+      },
+      {
+        "entityName": "N32",
+        "entityType": "T",
+        "description": "a description of node 32, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 32, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k096",
+          "k097",
+          "k098"
+        ]
+      },
+      {
+        "entityName": "N33",
+        "entityType": "T",
+        "description": "a description of node 33, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 33, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k099",
+          "k100",
+          "k101"
+        ]
+      },
+      {
+        "entityName": "N34",
+        "entityType": "T",
+        "description": "a description of node 34, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 34, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k102",
+          "k103",
+          "k104"
+        ]
+      },
+      {
+        "entityName": "N35",
+        "entityType": "T",
+        "description": "a description of node 35, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 35, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k105",
+          "k106",
+          "k107"
+        ]
+      },
+      {
+        "entityName": "N36",
+        "entityType": "T",
+        "description": "a description of node 36, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 36, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k108",
+          "k109",
+          "k110"
+        ]
+      },
+      {
+        "entityName": "N37",
+        "entityType": "T",
+        "description": "a description of node 37, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 37, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k111",
+          "k112",
+          "k113"
+        ]
+      },
+      {
+        "entityName": "N38",
+        "entityType": "T",
+        "description": "a description of node 38, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 38, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k114",
+          "k115",
+          "k116"
+        ]
+      },
+      {
+        "entityName": "N39",
+        "entityType": "T",
+        "description": "a description of node 39, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 39, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k117",
+          "k118",
+          "k119"
+        ]
+      },
+      {
+        "entityName": "N40",
+        "entityType": "T",
+        "description": "a description of node 40, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 40, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k000",
+          "k001",
+          "k002"
+        ]
+      },
+      {
+        "entityName": "N41",
+        "entityType": "T",
+        "description": "a description of node 41, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 41, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k003",
+          "k004",
+          "k005"
+        ]
+      },
+      {
+        "entityName": "N42",
+        "entityType": "T",
+        "description": "a description of node 42, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 42, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k006",
+          "k007",
+          "k008"
+        ]
+      },
+      {
+        "entityName": "N43",
+        "entityType": "T",
+        "description": "a description of node 43, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 43, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k009",
+          "k010",
+          "k011"
+        ]
+      },
+      {
+        "entityName": "N44",
+        "entityType": "T",
+        "description": "a description of node 44, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 44, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k012",
+          "k013",
+          "k014"
+        ]
+      },
+      {
+        "entityName": "N45",
+        "entityType": "T",
+        "description": "a description of node 45, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 45, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k015",
+          "k016",
+          "k017"
+        ]
+      },
+      {
+        "entityName": "N46",
+        "entityType": "T",
+        "description": "a description of node 46, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 46, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k018",
+          "k019",
+          "k020"
+        ]
+      },
+      {
+        "entityName": "N47",
+        "entityType": "T",
+        "description": "a description of node 47, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 47, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k021",
+          "k022",
+          "k023"
+        ]
+      },
+      {
+        "entityName": "N48",
+        "entityType": "T",
+        "description": "a description of node 48, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 48, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k024",
+          "k025",
+          "k026"
+        ]
+      },
+      {
+        "entityName": "N49",
+        "entityType": "T",
+        "description": "a description of node 49, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 49, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k027",
+          "k028",
+          "k029"
+        ]
+      },
+      {
+        "entityName": "N50",
+        "entityType": "T",
+        "description": "a description of node 50, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 50, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k030",
+          "k031",
+          "k032"
+        ]
+      },
+      {
+        "entityName": "N51",
+        "entityType": "T",
+        "description": "a description of node 51, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 51, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k033",
+          "k034",
+          "k035"
+        ]
+      },
+      {
+        "entityName": "N52",
+        "entityType": "T",
+        "description": "a description of node 52, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 52, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k036",
+          "k037",
+          "k038"
+        ]
+      },
+      {
+        "entityName": "N53",
+        "entityType": "T",
+        "description": "a description of node 53, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 53, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k039",
+          "k040",
+          "k041"
+        ]
+      },
+      {
+        "entityName": "N54",
+        "entityType": "T",
+        "description": "a description of node 54, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 54, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k042",
+          "k043",
+          "k044"
+        ]
+      },
+      {
+        "entityName": "N55",
+        "entityType": "T",
+        "description": "a description of node 55, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 55, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k045",
+          "k046",
+          "k047"
+        ]
+      },
+      {
+        "entityName": "N56",
+        "entityType": "T",
+        "description": "a description of node 56, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 56, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k048",
+          "k049",
+          "k050"
+        ]
+      },
+      {
+        "entityName": "N57",
+        "entityType": "T",
+        "description": "a description of node 57, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 57, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k051",
+          "k052",
+          "k053"
+        ]
+      },
+      {
+        "entityName": "N58",
+        "entityType": "T",
+        "description": "a description of node 58, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 58, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k054",
+          "k055",
+          "k056"
+        ]
+      },
+      {
+        "entityName": "N59",
+        "entityType": "T",
+        "description": "a description of node 59, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 59, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k057",
+          "k058",
+          "k059"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "src": "N00",
+        "tgt": "N01",
+        "weight": 1.0,
+        "description": "node 0 and node 1 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k001",
+          "k001"
+        ]
+      },
+      {
+        "src": "N00",
+        "tgt": "N07",
+        "weight": 1.0,
+        "description": "node 0 and node 7 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k007",
+          "k007"
+        ]
+      },
+      {
+        "src": "N01",
+        "tgt": "N02",
+        "weight": 2.0,
+        "description": "node 1 and node 2 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k002",
+          "k003"
+        ]
+      },
+      {
+        "src": "N01",
+        "tgt": "N08",
+        "weight": 3.0,
+        "description": "node 1 and node 8 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k008",
+          "k009"
+        ]
+      },
+      {
+        "src": "N02",
+        "tgt": "N03",
+        "weight": 3.0,
+        "description": "node 2 and node 3 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k003",
+          "k005"
+        ]
+      },
+      {
+        "src": "N02",
+        "tgt": "N09",
+        "weight": 5.0,
+        "description": "node 2 and node 9 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k009",
+          "k011"
+        ]
+      },
+      {
+        "src": "N03",
+        "tgt": "N04",
+        "weight": 4.0,
+        "description": "node 3 and node 4 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k004",
+          "k007"
+        ]
+      },
+      {
+        "src": "N03",
+        "tgt": "N10",
+        "weight": 2.0,
+        "description": "node 3 and node 10 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k010",
+          "k013"
+        ]
+      },
+      {
+        "src": "N04",
+        "tgt": "N05",
+        "weight": 5.0,
+        "description": "node 4 and node 5 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k005",
+          "k009"
+        ]
+      },
+      {
+        "src": "N04",
+        "tgt": "N11",
+        "weight": 4.0,
+        "description": "node 4 and node 11 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k011",
+          "k015"
+        ]
+      },
+      {
+        "src": "N05",
+        "tgt": "N06",
+        "weight": 1.0,
+        "description": "node 5 and node 6 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k006",
+          "k011"
+        ]
+      },
+      {
+        "src": "N05",
+        "tgt": "N12",
+        "weight": 1.0,
+        "description": "node 5 and node 12 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k012",
+          "k017"
+        ]
+      },
+      {
+        "src": "N06",
+        "tgt": "N07",
+        "weight": 2.0,
+        "description": "node 6 and node 7 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k007",
+          "k013"
+        ]
+      },
+      {
+        "src": "N06",
+        "tgt": "N13",
+        "weight": 3.0,
+        "description": "node 6 and node 13 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k013",
+          "k019"
+        ]
+      },
+      {
+        "src": "N07",
+        "tgt": "N08",
+        "weight": 3.0,
+        "description": "node 7 and node 8 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k008",
+          "k015"
+        ]
+      },
+      {
+        "src": "N07",
+        "tgt": "N14",
+        "weight": 5.0,
+        "description": "node 7 and node 14 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k014",
+          "k021"
+        ]
+      },
+      {
+        "src": "N08",
+        "tgt": "N09",
+        "weight": 4.0,
+        "description": "node 8 and node 9 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k009",
+          "k017"
+        ]
+      },
+      {
+        "src": "N08",
+        "tgt": "N15",
+        "weight": 2.0,
+        "description": "node 8 and node 15 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k015",
+          "k023"
+        ]
+      },
+      {
+        "src": "N09",
+        "tgt": "N10",
+        "weight": 5.0,
+        "description": "node 9 and node 10 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k010",
+          "k019"
+        ]
+      },
+      {
+        "src": "N09",
+        "tgt": "N16",
+        "weight": 4.0,
+        "description": "node 9 and node 16 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k016",
+          "k025"
+        ]
+      },
+      {
+        "src": "N10",
+        "tgt": "N11",
+        "weight": 1.0,
+        "description": "node 10 and node 11 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k011",
+          "k021"
+        ]
+      },
+      {
+        "src": "N10",
+        "tgt": "N17",
+        "weight": 1.0,
+        "description": "node 10 and node 17 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k017",
+          "k027"
+        ]
+      },
+      {
+        "src": "N11",
+        "tgt": "N12",
+        "weight": 2.0,
+        "description": "node 11 and node 12 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k012",
+          "k023"
+        ]
+      },
+      {
+        "src": "N11",
+        "tgt": "N18",
+        "weight": 3.0,
+        "description": "node 11 and node 18 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k018",
+          "k029"
+        ]
+      },
+      {
+        "src": "N12",
+        "tgt": "N13",
+        "weight": 3.0,
+        "description": "node 12 and node 13 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k013",
+          "k025"
+        ]
+      },
+      {
+        "src": "N12",
+        "tgt": "N19",
+        "weight": 5.0,
+        "description": "node 12 and node 19 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k019",
+          "k031"
+        ]
+      },
+      {
+        "src": "N13",
+        "tgt": "N14",
+        "weight": 4.0,
+        "description": "node 13 and node 14 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k014",
+          "k027"
+        ]
+      },
+      {
+        "src": "N13",
+        "tgt": "N20",
+        "weight": 2.0,
+        "description": "node 13 and node 20 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k020",
+          "k033"
+        ]
+      },
+      {
+        "src": "N14",
+        "tgt": "N15",
+        "weight": 5.0,
+        "description": "node 14 and node 15 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k015",
+          "k029"
+        ]
+      },
+      {
+        "src": "N14",
+        "tgt": "N21",
+        "weight": 4.0,
+        "description": "node 14 and node 21 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k021",
+          "k035"
+        ]
+      },
+      {
+        "src": "N15",
+        "tgt": "N16",
+        "weight": 1.0,
+        "description": "node 15 and node 16 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k016",
+          "k031"
+        ]
+      },
+      {
+        "src": "N15",
+        "tgt": "N22",
+        "weight": 1.0,
+        "description": "node 15 and node 22 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k022",
+          "k037"
+        ]
+      },
+      {
+        "src": "N16",
+        "tgt": "N17",
+        "weight": 2.0,
+        "description": "node 16 and node 17 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k017",
+          "k033"
+        ]
+      },
+      {
+        "src": "N16",
+        "tgt": "N23",
+        "weight": 3.0,
+        "description": "node 16 and node 23 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k023",
+          "k039"
+        ]
+      },
+      {
+        "src": "N17",
+        "tgt": "N18",
+        "weight": 3.0,
+        "description": "node 17 and node 18 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k018",
+          "k035"
+        ]
+      },
+      {
+        "src": "N17",
+        "tgt": "N24",
+        "weight": 5.0,
+        "description": "node 17 and node 24 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k024",
+          "k041"
+        ]
+      },
+      {
+        "src": "N18",
+        "tgt": "N19",
+        "weight": 4.0,
+        "description": "node 18 and node 19 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k019",
+          "k037"
+        ]
+      },
+      {
+        "src": "N18",
+        "tgt": "N25",
+        "weight": 2.0,
+        "description": "node 18 and node 25 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k025",
+          "k043"
+        ]
+      },
+      {
+        "src": "N19",
+        "tgt": "N20",
+        "weight": 5.0,
+        "description": "node 19 and node 20 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k020",
+          "k039"
+        ]
+      },
+      {
+        "src": "N19",
+        "tgt": "N26",
+        "weight": 4.0,
+        "description": "node 19 and node 26 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k026",
+          "k045"
+        ]
+      },
+      {
+        "src": "N20",
+        "tgt": "N21",
+        "weight": 1.0,
+        "description": "node 20 and node 21 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k021",
+          "k041"
+        ]
+      },
+      {
+        "src": "N20",
+        "tgt": "N27",
+        "weight": 1.0,
+        "description": "node 20 and node 27 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k027",
+          "k047"
+        ]
+      },
+      {
+        "src": "N21",
+        "tgt": "N22",
+        "weight": 2.0,
+        "description": "node 21 and node 22 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k022",
+          "k043"
+        ]
+      },
+      {
+        "src": "N21",
+        "tgt": "N28",
+        "weight": 3.0,
+        "description": "node 21 and node 28 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k028",
+          "k049"
+        ]
+      },
+      {
+        "src": "N22",
+        "tgt": "N23",
+        "weight": 3.0,
+        "description": "node 22 and node 23 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k023",
+          "k045"
+        ]
+      },
+      {
+        "src": "N22",
+        "tgt": "N29",
+        "weight": 5.0,
+        "description": "node 22 and node 29 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k029",
+          "k051"
+        ]
+      },
+      {
+        "src": "N23",
+        "tgt": "N24",
+        "weight": 4.0,
+        "description": "node 23 and node 24 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k024",
+          "k047"
+        ]
+      },
+      {
+        "src": "N23",
+        "tgt": "N30",
+        "weight": 2.0,
+        "description": "node 23 and node 30 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k030",
+          "k053"
+        ]
+      },
+      {
+        "src": "N24",
+        "tgt": "N25",
+        "weight": 5.0,
+        "description": "node 24 and node 25 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k025",
+          "k049"
+        ]
+      },
+      {
+        "src": "N24",
+        "tgt": "N31",
+        "weight": 4.0,
+        "description": "node 24 and node 31 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k031",
+          "k055"
+        ]
+      },
+      {
+        "src": "N25",
+        "tgt": "N26",
+        "weight": 1.0,
+        "description": "node 25 and node 26 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k026",
+          "k051"
+        ]
+      },
+      {
+        "src": "N25",
+        "tgt": "N32",
+        "weight": 1.0,
+        "description": "node 25 and node 32 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k032",
+          "k057"
+        ]
+      },
+      {
+        "src": "N26",
+        "tgt": "N27",
+        "weight": 2.0,
+        "description": "node 26 and node 27 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k027",
+          "k053"
+        ]
+      },
+      {
+        "src": "N26",
+        "tgt": "N33",
+        "weight": 3.0,
+        "description": "node 26 and node 33 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k033",
+          "k059"
+        ]
+      },
+      {
+        "src": "N27",
+        "tgt": "N28",
+        "weight": 3.0,
+        "description": "node 27 and node 28 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k028",
+          "k055"
+        ]
+      },
+      {
+        "src": "N27",
+        "tgt": "N34",
+        "weight": 5.0,
+        "description": "node 27 and node 34 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k034",
+          "k061"
+        ]
+      },
+      {
+        "src": "N28",
+        "tgt": "N29",
+        "weight": 4.0,
+        "description": "node 28 and node 29 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k029",
+          "k057"
+        ]
+      },
+      {
+        "src": "N28",
+        "tgt": "N35",
+        "weight": 2.0,
+        "description": "node 28 and node 35 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k035",
+          "k063"
+        ]
+      },
+      {
+        "src": "N29",
+        "tgt": "N30",
+        "weight": 5.0,
+        "description": "node 29 and node 30 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k030",
+          "k059"
+        ]
+      },
+      {
+        "src": "N29",
+        "tgt": "N36",
+        "weight": 4.0,
+        "description": "node 29 and node 36 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k036",
+          "k065"
+        ]
+      },
+      {
+        "src": "N30",
+        "tgt": "N31",
+        "weight": 1.0,
+        "description": "node 30 and node 31 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k031",
+          "k061"
+        ]
+      },
+      {
+        "src": "N30",
+        "tgt": "N37",
+        "weight": 1.0,
+        "description": "node 30 and node 37 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k037",
+          "k067"
+        ]
+      },
+      {
+        "src": "N31",
+        "tgt": "N32",
+        "weight": 2.0,
+        "description": "node 31 and node 32 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k032",
+          "k063"
+        ]
+      },
+      {
+        "src": "N31",
+        "tgt": "N38",
+        "weight": 3.0,
+        "description": "node 31 and node 38 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k038",
+          "k069"
+        ]
+      },
+      {
+        "src": "N32",
+        "tgt": "N33",
+        "weight": 3.0,
+        "description": "node 32 and node 33 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k033",
+          "k065"
+        ]
+      },
+      {
+        "src": "N32",
+        "tgt": "N39",
+        "weight": 5.0,
+        "description": "node 32 and node 39 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k039",
+          "k071"
+        ]
+      },
+      {
+        "src": "N33",
+        "tgt": "N34",
+        "weight": 4.0,
+        "description": "node 33 and node 34 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k034",
+          "k067"
+        ]
+      },
+      {
+        "src": "N33",
+        "tgt": "N40",
+        "weight": 2.0,
+        "description": "node 33 and node 40 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k040",
+          "k073"
+        ]
+      },
+      {
+        "src": "N34",
+        "tgt": "N35",
+        "weight": 5.0,
+        "description": "node 34 and node 35 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k035",
+          "k069"
+        ]
+      },
+      {
+        "src": "N34",
+        "tgt": "N41",
+        "weight": 4.0,
+        "description": "node 34 and node 41 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k041",
+          "k075"
+        ]
+      },
+      {
+        "src": "N35",
+        "tgt": "N36",
+        "weight": 1.0,
+        "description": "node 35 and node 36 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k036",
+          "k071"
+        ]
+      },
+      {
+        "src": "N35",
+        "tgt": "N42",
+        "weight": 1.0,
+        "description": "node 35 and node 42 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k042",
+          "k077"
+        ]
+      },
+      {
+        "src": "N36",
+        "tgt": "N37",
+        "weight": 2.0,
+        "description": "node 36 and node 37 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k037",
+          "k073"
+        ]
+      },
+      {
+        "src": "N36",
+        "tgt": "N43",
+        "weight": 3.0,
+        "description": "node 36 and node 43 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k043",
+          "k079"
+        ]
+      },
+      {
+        "src": "N37",
+        "tgt": "N38",
+        "weight": 3.0,
+        "description": "node 37 and node 38 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k038",
+          "k075"
+        ]
+      },
+      {
+        "src": "N37",
+        "tgt": "N44",
+        "weight": 5.0,
+        "description": "node 37 and node 44 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k044",
+          "k081"
+        ]
+      },
+      {
+        "src": "N38",
+        "tgt": "N39",
+        "weight": 4.0,
+        "description": "node 38 and node 39 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k039",
+          "k077"
+        ]
+      },
+      {
+        "src": "N38",
+        "tgt": "N45",
+        "weight": 2.0,
+        "description": "node 38 and node 45 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k045",
+          "k083"
+        ]
+      },
+      {
+        "src": "N39",
+        "tgt": "N40",
+        "weight": 5.0,
+        "description": "node 39 and node 40 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k040",
+          "k079"
+        ]
+      },
+      {
+        "src": "N39",
+        "tgt": "N46",
+        "weight": 4.0,
+        "description": "node 39 and node 46 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k046",
+          "k085"
+        ]
+      },
+      {
+        "src": "N40",
+        "tgt": "N41",
+        "weight": 1.0,
+        "description": "node 40 and node 41 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k041",
+          "k081"
+        ]
+      },
+      {
+        "src": "N40",
+        "tgt": "N47",
+        "weight": 1.0,
+        "description": "node 40 and node 47 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k047",
+          "k087"
+        ]
+      },
+      {
+        "src": "N41",
+        "tgt": "N42",
+        "weight": 2.0,
+        "description": "node 41 and node 42 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k042",
+          "k083"
+        ]
+      },
+      {
+        "src": "N41",
+        "tgt": "N48",
+        "weight": 3.0,
+        "description": "node 41 and node 48 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k048",
+          "k089"
+        ]
+      },
+      {
+        "src": "N42",
+        "tgt": "N43",
+        "weight": 3.0,
+        "description": "node 42 and node 43 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k043",
+          "k085"
+        ]
+      },
+      {
+        "src": "N42",
+        "tgt": "N49",
+        "weight": 5.0,
+        "description": "node 42 and node 49 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k049",
+          "k091"
+        ]
+      },
+      {
+        "src": "N43",
+        "tgt": "N44",
+        "weight": 4.0,
+        "description": "node 43 and node 44 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k044",
+          "k087"
+        ]
+      },
+      {
+        "src": "N43",
+        "tgt": "N50",
+        "weight": 2.0,
+        "description": "node 43 and node 50 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k050",
+          "k093"
+        ]
+      },
+      {
+        "src": "N44",
+        "tgt": "N45",
+        "weight": 5.0,
+        "description": "node 44 and node 45 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k045",
+          "k089"
+        ]
+      },
+      {
+        "src": "N44",
+        "tgt": "N51",
+        "weight": 4.0,
+        "description": "node 44 and node 51 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k051",
+          "k095"
+        ]
+      },
+      {
+        "src": "N45",
+        "tgt": "N46",
+        "weight": 1.0,
+        "description": "node 45 and node 46 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k046",
+          "k091"
+        ]
+      },
+      {
+        "src": "N45",
+        "tgt": "N52",
+        "weight": 1.0,
+        "description": "node 45 and node 52 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k052",
+          "k097"
+        ]
+      },
+      {
+        "src": "N46",
+        "tgt": "N47",
+        "weight": 2.0,
+        "description": "node 46 and node 47 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k047",
+          "k093"
+        ]
+      },
+      {
+        "src": "N46",
+        "tgt": "N53",
+        "weight": 3.0,
+        "description": "node 46 and node 53 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k053",
+          "k099"
+        ]
+      },
+      {
+        "src": "N47",
+        "tgt": "N48",
+        "weight": 3.0,
+        "description": "node 47 and node 48 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k048",
+          "k095"
+        ]
+      },
+      {
+        "src": "N47",
+        "tgt": "N54",
+        "weight": 5.0,
+        "description": "node 47 and node 54 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k054",
+          "k101"
+        ]
+      },
+      {
+        "src": "N48",
+        "tgt": "N49",
+        "weight": 4.0,
+        "description": "node 48 and node 49 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k049",
+          "k097"
+        ]
+      },
+      {
+        "src": "N48",
+        "tgt": "N55",
+        "weight": 2.0,
+        "description": "node 48 and node 55 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k055",
+          "k103"
+        ]
+      },
+      {
+        "src": "N49",
+        "tgt": "N50",
+        "weight": 5.0,
+        "description": "node 49 and node 50 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k050",
+          "k099"
+        ]
+      },
+      {
+        "src": "N49",
+        "tgt": "N56",
+        "weight": 4.0,
+        "description": "node 49 and node 56 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k056",
+          "k105"
+        ]
+      },
+      {
+        "src": "N50",
+        "tgt": "N51",
+        "weight": 1.0,
+        "description": "node 50 and node 51 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k051",
+          "k101"
+        ]
+      },
+      {
+        "src": "N50",
+        "tgt": "N57",
+        "weight": 1.0,
+        "description": "node 50 and node 57 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k057",
+          "k107"
+        ]
+      },
+      {
+        "src": "N51",
+        "tgt": "N52",
+        "weight": 2.0,
+        "description": "node 51 and node 52 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k052",
+          "k103"
+        ]
+      },
+      {
+        "src": "N51",
+        "tgt": "N58",
+        "weight": 3.0,
+        "description": "node 51 and node 58 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k058",
+          "k109"
+        ]
+      },
+      {
+        "src": "N52",
+        "tgt": "N53",
+        "weight": 3.0,
+        "description": "node 52 and node 53 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc04.md",
+        "sourceIds": [
+          "k053",
+          "k105"
+        ]
+      },
+      {
+        "src": "N52",
+        "tgt": "N59",
+        "weight": 5.0,
+        "description": "node 52 and node 59 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k059",
+          "k111"
+        ]
+      },
+      {
+        "src": "N53",
+        "tgt": "N54",
+        "weight": 4.0,
+        "description": "node 53 and node 54 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc05.md",
+        "sourceIds": [
+          "k054",
+          "k107"
+        ]
+      },
+      {
+        "src": "N54",
+        "tgt": "N55",
+        "weight": 5.0,
+        "description": "node 54 and node 55 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc06.md",
+        "sourceIds": [
+          "k055",
+          "k109"
+        ]
+      },
+      {
+        "src": "N55",
+        "tgt": "N56",
+        "weight": 1.0,
+        "description": "node 55 and node 56 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc00.md",
+        "sourceIds": [
+          "k056",
+          "k111"
+        ]
+      },
+      {
+        "src": "N56",
+        "tgt": "N57",
+        "weight": 2.0,
+        "description": "node 56 and node 57 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc01.md",
+        "sourceIds": [
+          "k057",
+          "k113"
+        ]
+      },
+      {
+        "src": "N57",
+        "tgt": "N58",
+        "weight": 3.0,
+        "description": "node 57 and node 58 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc02.md",
+        "sourceIds": [
+          "k058",
+          "k115"
+        ]
+      },
+      {
+        "src": "N58",
+        "tgt": "N59",
+        "weight": 4.0,
+        "description": "node 58 and node 59 are connected by a relation with a description long enough to matter to the budget",
+        "filePath": "doc03.md",
+        "sourceIds": [
+          "k059",
+          "k117"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "k000",
+        "content": "passage 0, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 0, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k001",
+        "content": "passage 1, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 1, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k002",
+        "content": "passage 2, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 2, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k003",
+        "content": "passage 3, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 3, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k004",
+        "content": "passage 4, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 4, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k005",
+        "content": "passage 5, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 5, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k006",
+        "content": "passage 6, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 6, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k007",
+        "content": "passage 7, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 7, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k008",
+        "content": "passage 8, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 8, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k009",
+        "content": "passage 9, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 9, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k010",
+        "content": "passage 10, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 10, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k011",
+        "content": "passage 11, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 11, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k012",
+        "content": "passage 12, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 12, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k013",
+        "content": "passage 13, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 13, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k014",
+        "content": "passage 14, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 14, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k015",
+        "content": "passage 15, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 15, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k016",
+        "content": "passage 16, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 16, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k017",
+        "content": "passage 17, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 17, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k018",
+        "content": "passage 18, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 18, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k019",
+        "content": "passage 19, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 19, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k020",
+        "content": "passage 20, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 20, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k021",
+        "content": "passage 21, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 21, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k022",
+        "content": "passage 22, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 22, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k023",
+        "content": "passage 23, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 23, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k024",
+        "content": "passage 24, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 24, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k025",
+        "content": "passage 25, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 25, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k026",
+        "content": "passage 26, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 26, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k027",
+        "content": "passage 27, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 27, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k028",
+        "content": "passage 28, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 28, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k029",
+        "content": "passage 29, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 29, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k030",
+        "content": "passage 30, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 30, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k031",
+        "content": "passage 31, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 31, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k032",
+        "content": "passage 32, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 32, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k033",
+        "content": "passage 33, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 33, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k034",
+        "content": "passage 34, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 34, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k035",
+        "content": "passage 35, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 35, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k036",
+        "content": "passage 36, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 36, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k037",
+        "content": "passage 37, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 37, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k038",
+        "content": "passage 38, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 38, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k039",
+        "content": "passage 39, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 39, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k040",
+        "content": "passage 40, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 40, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k041",
+        "content": "passage 41, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 41, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k042",
+        "content": "passage 42, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 42, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k043",
+        "content": "passage 43, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 43, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k044",
+        "content": "passage 44, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 44, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k045",
+        "content": "passage 45, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 45, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k046",
+        "content": "passage 46, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 46, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k047",
+        "content": "passage 47, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 47, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k048",
+        "content": "passage 48, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 48, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k049",
+        "content": "passage 49, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 49, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k050",
+        "content": "passage 50, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 50, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k051",
+        "content": "passage 51, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 51, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k052",
+        "content": "passage 52, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 52, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k053",
+        "content": "passage 53, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 53, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k054",
+        "content": "passage 54, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 54, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k055",
+        "content": "passage 55, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 55, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k056",
+        "content": "passage 56, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 56, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k057",
+        "content": "passage 57, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 57, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k058",
+        "content": "passage 58, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 58, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k059",
+        "content": "passage 59, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 59, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k060",
+        "content": "passage 60, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 60, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k061",
+        "content": "passage 61, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 61, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k062",
+        "content": "passage 62, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 62, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k063",
+        "content": "passage 63, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 63, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k064",
+        "content": "passage 64, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 64, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k065",
+        "content": "passage 65, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 65, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k066",
+        "content": "passage 66, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 66, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k067",
+        "content": "passage 67, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 67, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k068",
+        "content": "passage 68, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 68, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k069",
+        "content": "passage 69, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 69, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k070",
+        "content": "passage 70, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 70, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k071",
+        "content": "passage 71, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 71, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k072",
+        "content": "passage 72, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 72, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k073",
+        "content": "passage 73, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 73, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k074",
+        "content": "passage 74, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 74, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k075",
+        "content": "passage 75, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 75, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k076",
+        "content": "passage 76, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 76, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k077",
+        "content": "passage 77, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 77, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k078",
+        "content": "passage 78, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 78, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k079",
+        "content": "passage 79, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 79, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k080",
+        "content": "passage 80, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 80, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k081",
+        "content": "passage 81, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 81, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k082",
+        "content": "passage 82, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 82, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k083",
+        "content": "passage 83, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 83, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k084",
+        "content": "passage 84, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 84, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k085",
+        "content": "passage 85, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 85, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k086",
+        "content": "passage 86, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 86, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k087",
+        "content": "passage 87, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 87, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k088",
+        "content": "passage 88, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 88, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k089",
+        "content": "passage 89, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 89, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k090",
+        "content": "passage 90, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 90, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k091",
+        "content": "passage 91, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 91, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k092",
+        "content": "passage 92, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 92, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k093",
+        "content": "passage 93, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 93, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k094",
+        "content": "passage 94, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 94, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k095",
+        "content": "passage 95, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 95, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k096",
+        "content": "passage 96, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 96, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k097",
+        "content": "passage 97, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 97, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k098",
+        "content": "passage 98, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 98, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k099",
+        "content": "passage 99, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 99, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k100",
+        "content": "passage 100, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 100, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k101",
+        "content": "passage 101, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 101, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k102",
+        "content": "passage 102, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 102, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k103",
+        "content": "passage 103, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 103, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k104",
+        "content": "passage 104, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 104, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k105",
+        "content": "passage 105, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 105, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k106",
+        "content": "passage 106, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 106, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k107",
+        "content": "passage 107, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 107, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k108",
+        "content": "passage 108, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 108, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k109",
+        "content": "passage 109, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 109, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k110",
+        "content": "passage 110, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 110, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k111",
+        "content": "passage 111, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 111, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k112",
+        "content": "passage 112, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 112, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      },
+      {
+        "chunkId": "k113",
+        "content": "passage 113, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 113, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc01.md"
+      },
+      {
+        "chunkId": "k114",
+        "content": "passage 114, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 114, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc02.md"
+      },
+      {
+        "chunkId": "k115",
+        "content": "passage 115, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 115, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc03.md"
+      },
+      {
+        "chunkId": "k116",
+        "content": "passage 116, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 116, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc04.md"
+      },
+      {
+        "chunkId": "k117",
+        "content": "passage 117, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 117, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc05.md"
+      },
+      {
+        "chunkId": "k118",
+        "content": "passage 118, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 118, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc06.md"
+      },
+      {
+        "chunkId": "k119",
+        "content": "passage 119, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them passage 119, carrying enough words that the chunk budget has to choose between passages rather than accepting all of them ",
+        "filePath": "doc00.md"
+      }
+    ],
+    "entityHits": [
+      "N00",
+      "N02",
+      "N04",
+      "N06",
+      "N08",
+      "N10",
+      "N12",
+      "N14",
+      "N16",
+      "N18",
+      "N20",
+      "N22",
+      "N24",
+      "N26",
+      "N28",
+      "N30",
+      "N32",
+      "N34",
+      "N36",
+      "N38",
+      "N40",
+      "N42",
+      "N44",
+      "N46",
+      "N48",
+      "N50",
+      "N52",
+      "N54",
+      "N56",
+      "N58"
+    ],
+    "relationHits": [
+      "N00|N01",
+      "N03|N04",
+      "N06|N07",
+      "N09|N10",
+      "N12|N13",
+      "N15|N16",
+      "N18|N19",
+      "N21|N22",
+      "N24|N25",
+      "N27|N28",
+      "N30|N31",
+      "N33|N34",
+      "N36|N37",
+      "N39|N40",
+      "N42|N43",
+      "N45|N46",
+      "N48|N49",
+      "N51|N52",
+      "N54|N55",
+      "N57|N58"
+    ],
+    "chunkHits": [
+      "k000",
+      "k001",
+      "k002",
+      "k003",
+      "k004",
+      "k005",
+      "k006",
+      "k007",
+      "k008",
+      "k009",
+      "k010",
+      "k011",
+      "k012",
+      "k013",
+      "k014",
+      "k015",
+      "k016",
+      "k017",
+      "k018",
+      "k019"
+    ]
+  },
+  {
+    "name": "arrival-orders-tied-on-rank-and-weight",
+    "sequence": "arrival-orders",
+    "sortKey": "rankWeight",
+    "rows": [
+      {
+        "src": "P",
+        "tgt": "Q",
+        "weight": 2.0,
+        "description": "P and Q",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ],
+        "rankWeight": "4|2.0"
+      },
+      {
+        "src": "P",
+        "tgt": "R",
+        "weight": 2.0,
+        "description": "P and R",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ],
+        "rankWeight": "4|2.0"
+      },
+      {
+        "src": "P",
+        "tgt": "S",
+        "weight": 2.0,
+        "description": "P and S",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ],
+        "rankWeight": "4|2.0"
+      }
+    ],
+    "query": "which relations come back, and in what order",
+    "mode": "local",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "P",
+        "entityType": "T",
+        "description": "description of P",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cp"
+        ]
+      },
+      {
+        "entityName": "Q",
+        "entityType": "T",
+        "description": "description of Q",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cq"
+        ]
+      },
+      {
+        "entityName": "R",
+        "entityType": "T",
+        "description": "description of R",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cr"
+        ]
+      },
+      {
+        "entityName": "S",
+        "entityType": "T",
+        "description": "description of S",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cs"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "c1",
+        "content": "passage 1",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "passage 2",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "passage 3",
+        "filePath": "a.md"
+      }
+    ],
+    "entityHits": [
+      "P"
+    ],
+    "relationHits": [],
+    "chunkHits": []
+  },
+  {
+    "name": "arrival-orders-distinct-weights",
+    "sequence": "arrival-orders",
+    "sortKey": "rankWeight",
+    "rows": [
+      {
+        "src": "P",
+        "tgt": "Q",
+        "weight": 1.0,
+        "description": "P and Q",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c1"
+        ],
+        "rankWeight": "4|1.0"
+      },
+      {
+        "src": "P",
+        "tgt": "R",
+        "weight": 2.0,
+        "description": "P and R",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c2"
+        ],
+        "rankWeight": "4|2.0"
+      },
+      {
+        "src": "P",
+        "tgt": "S",
+        "weight": 3.0,
+        "description": "P and S",
+        "filePath": "f.md",
+        "sourceIds": [
+          "c3"
+        ],
+        "rankWeight": "4|3.0"
+      }
+    ],
+    "query": "which relations come back, and in what order",
+    "mode": "local",
+    "llKeywords": [
+      "alpha"
+    ],
+    "hlKeywords": [],
+    "spec": {
+      "topK": 40,
+      "chunkTopK": 20,
+      "maxEntityTokens": 6000,
+      "maxRelationTokens": 8000,
+      "chunkTokenBudget": 12000,
+      "relatedChunkNumber": 5
+    },
+    "nodes": [
+      {
+        "entityName": "P",
+        "entityType": "T",
+        "description": "description of P",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cp"
+        ]
+      },
+      {
+        "entityName": "Q",
+        "entityType": "T",
+        "description": "description of Q",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cq"
+        ]
+      },
+      {
+        "entityName": "R",
+        "entityType": "T",
+        "description": "description of R",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cr"
+        ]
+      },
+      {
+        "entityName": "S",
+        "entityType": "T",
+        "description": "description of S",
+        "filePath": "f.md",
+        "sourceIds": [
+          "cs"
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "chunkId": "c1",
+        "content": "passage 1",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "c2",
+        "content": "passage 2",
+        "filePath": "a.md"
+      },
+      {
+        "chunkId": "c3",
+        "content": "passage 3",
+        "filePath": "a.md"
+      }
+    ],
+    "entityHits": [
+      "P"
+    ],
+    "relationHits": [],
+    "chunkHits": []
+  }
+]

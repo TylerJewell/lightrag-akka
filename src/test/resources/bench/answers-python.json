@@ -1,0 +1,2677 @@
+{
+  "arrival-orders-distinct-weights": {
+    "answers": [
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      }
+    ],
+    "deliveryOrders": 6
+  },
+  "arrival-orders-tied-on-rank-and-weight": {
+    "answers": [
+      {
+        "chunks": [
+          {
+            "chunkId": "c1",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c3",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c1",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c3",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          },
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c2",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c3",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          },
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c2",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c3",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          }
+        ]
+      },
+      {
+        "chunks": [
+          {
+            "chunkId": "c3",
+            "id": "DC1",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c2",
+            "id": "DC2",
+            "referenceId": "1"
+          },
+          {
+            "chunkId": "c1",
+            "id": "DC3",
+            "referenceId": "1"
+          }
+        ],
+        "entities": [
+          {
+            "description": "description of P",
+            "entity": "P",
+            "type": "T"
+          }
+        ],
+        "references": [
+          {
+            "filePath": "a.md",
+            "referenceId": "1"
+          }
+        ],
+        "relations": [
+          {
+            "description": "P and S",
+            "entity1": "P",
+            "entity2": "S"
+          },
+          {
+            "description": "P and R",
+            "entity1": "P",
+            "entity2": "R"
+          },
+          {
+            "description": "P and Q",
+            "entity1": "P",
+            "entity2": "Q"
+          }
+        ]
+      }
+    ],
+    "deliveryOrders": 6
+  },
+  "chunk-top-k-of-two": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "global-mode-with-no-high-level-keywords": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "cc",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC5",
+        "referenceId": "5"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "c.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "5"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "global-only": {
+    "chunks": [
+      {
+        "chunkId": "ce",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "cf",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "ca",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "cb",
+        "id": "DC6",
+        "referenceId": "6"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "e.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "f.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "a.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "b.md",
+        "referenceId": "6"
+      }
+    ],
+    "relations": [
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      }
+    ]
+  },
+  "hybrid-both-branches": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "ce",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "cc",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC6",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "cf",
+        "id": "DC7",
+        "referenceId": "7"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC8",
+        "referenceId": "8"
+      },
+      {
+        "chunkId": "cb",
+        "id": "DC9",
+        "referenceId": "9"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "e.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "c.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "6"
+      },
+      {
+        "filePath": "f.md",
+        "referenceId": "7"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "8"
+      },
+      {
+        "filePath": "b.md",
+        "referenceId": "9"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "local-mode-with-no-low-level-keywords": {
+    "chunks": [
+      {
+        "chunkId": "ce",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "cf",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "ca",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "cb",
+        "id": "DC6",
+        "referenceId": "6"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "e.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "f.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "a.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "b.md",
+        "referenceId": "6"
+      }
+    ],
+    "relations": [
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      }
+    ]
+  },
+  "local-only": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "cc",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC5",
+        "referenceId": "5"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "c.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "5"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "mix-adds-the-chunk-index": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "cf",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "ce",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "cc",
+        "id": "DC6",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC7",
+        "referenceId": "7"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC8",
+        "referenceId": "8"
+      },
+      {
+        "chunkId": "cb",
+        "id": "DC9",
+        "referenceId": "9"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "f.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "e.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "c.md",
+        "referenceId": "6"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "7"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "8"
+      },
+      {
+        "filePath": "b.md",
+        "referenceId": "9"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "no-keywords-at-either-level": {
+    "chunks": [],
+    "entities": [],
+    "references": [],
+    "relations": []
+  },
+  "related-chunk-number-of-one": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "ce",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "cc",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC6",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "cf",
+        "id": "DC7",
+        "referenceId": "7"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC8",
+        "referenceId": "8"
+      },
+      {
+        "chunkId": "cb",
+        "id": "DC9",
+        "referenceId": "9"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "e.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "c.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "6"
+      },
+      {
+        "filePath": "f.md",
+        "referenceId": "7"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "8"
+      },
+      {
+        "filePath": "b.md",
+        "referenceId": "9"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "relation-found-in-both-directions": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "cb",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "cc",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC6",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "ce",
+        "id": "DC7",
+        "referenceId": "7"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC8",
+        "referenceId": "8"
+      },
+      {
+        "chunkId": "cf",
+        "id": "DC9",
+        "referenceId": "9"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "b.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "c.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "6"
+      },
+      {
+        "filePath": "e.md",
+        "referenceId": "7"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "8"
+      },
+      {
+        "filePath": "f.md",
+        "referenceId": "9"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "B",
+        "entity2": "A"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "sixty-node-graph": {
+    "chunks": [
+      {
+        "chunkId": "k000",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "k071",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "k001",
+        "id": "DC3",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "k069",
+        "id": "DC4",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "k002",
+        "id": "DC5",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "k089",
+        "id": "DC6",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "k003",
+        "id": "DC7",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "k006",
+        "id": "DC8",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "k087",
+        "id": "DC9",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "k004",
+        "id": "DC10",
+        "referenceId": "7"
+      },
+      {
+        "chunkId": "k007",
+        "id": "DC11",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "k105",
+        "id": "DC12",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "k005",
+        "id": "DC13",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "k008",
+        "id": "DC14",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "k107",
+        "id": "DC15",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "k009",
+        "id": "DC16",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "k012",
+        "id": "DC17",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "k010",
+        "id": "DC18",
+        "referenceId": "6"
+      },
+      {
+        "chunkId": "k013",
+        "id": "DC19",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "k011",
+        "id": "DC20",
+        "referenceId": "7"
+      }
+    ],
+    "entities": [
+      {
+        "description": "a description of node 0, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 0, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N00",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 2, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 2, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N02",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 1, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 1, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N01",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 4, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 4, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N04",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 3, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 3, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N03",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 6, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 6, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N06",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 8, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 8, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N08",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 10, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 10, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N10",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 7, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 7, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N07",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 12, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 12, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N12",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 9, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 9, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N09",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 14, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 14, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N14",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 16, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 16, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N16",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 18, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 18, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N18",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 13, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 13, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N13",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 20, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 20, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N20",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 15, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 15, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N15",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 22, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 22, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N22",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 24, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 24, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N24",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 26, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 26, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N26",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 19, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 19, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N19",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 28, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 28, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N28",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 21, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 21, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N21",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 30, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 30, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N30",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 32, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 32, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N32",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 34, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 34, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N34",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 25, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 25, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N25",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 36, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 36, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N36",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 27, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 27, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N27",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 38, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 38, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N38",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 40, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 40, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N40",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 42, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 42, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N42",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 31, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 31, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N31",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 44, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 44, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N44",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 33, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 33, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N33",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 46, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 46, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N46",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 48, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 48, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N48",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 50, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 50, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N50",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 37, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 37, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N37",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 52, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 52, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N52",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 39, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 39, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N39",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 54, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 54, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N54",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 56, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 56, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N56",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 58, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 58, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N58",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 43, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 43, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N43",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 45, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 45, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N45",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 49, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 49, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N49",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 51, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 51, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N51",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 55, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 55, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N55",
+        "type": "T"
+      },
+      {
+        "description": "a description of node 57, long enough that the token budget has something to cut and that the rendering is not dominated by its braces a description of node 57, long enough that the token budget has something to cut and that the rendering is not dominated by its braces ",
+        "entity": "N57",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "doc00.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "doc01.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "doc06.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "doc02.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "doc05.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "doc03.md",
+        "referenceId": "6"
+      },
+      {
+        "filePath": "doc04.md",
+        "referenceId": "7"
+      }
+    ],
+    "relations": [
+      {
+        "description": "node 9 and node 10 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N09",
+        "entity2": "N10"
+      },
+      {
+        "description": "node 0 and node 1 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N00",
+        "entity2": "N01"
+      },
+      {
+        "description": "node 12 and node 19 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N12",
+        "entity2": "N19"
+      },
+      {
+        "description": "node 3 and node 4 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N03",
+        "entity2": "N04"
+      },
+      {
+        "description": "node 7 and node 14 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N07",
+        "entity2": "N14"
+      },
+      {
+        "description": "node 6 and node 7 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N06",
+        "entity2": "N07"
+      },
+      {
+        "description": "node 14 and node 15 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N14",
+        "entity2": "N15"
+      },
+      {
+        "description": "node 19 and node 20 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N19",
+        "entity2": "N20"
+      },
+      {
+        "description": "node 12 and node 13 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N12",
+        "entity2": "N13"
+      },
+      {
+        "description": "node 22 and node 29 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N22",
+        "entity2": "N29"
+      },
+      {
+        "description": "node 15 and node 16 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N15",
+        "entity2": "N16"
+      },
+      {
+        "description": "node 17 and node 24 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N17",
+        "entity2": "N24"
+      },
+      {
+        "description": "node 18 and node 19 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N18",
+        "entity2": "N19"
+      },
+      {
+        "description": "node 24 and node 25 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N24",
+        "entity2": "N25"
+      },
+      {
+        "description": "node 21 and node 22 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N21",
+        "entity2": "N22"
+      },
+      {
+        "description": "node 29 and node 30 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N29",
+        "entity2": "N30"
+      },
+      {
+        "description": "node 32 and node 39 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N32",
+        "entity2": "N39"
+      },
+      {
+        "description": "node 27 and node 28 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N27",
+        "entity2": "N28"
+      },
+      {
+        "description": "node 27 and node 34 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N27",
+        "entity2": "N34"
+      },
+      {
+        "description": "node 30 and node 31 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N30",
+        "entity2": "N31"
+      },
+      {
+        "description": "node 34 and node 35 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N34",
+        "entity2": "N35"
+      },
+      {
+        "description": "node 33 and node 34 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N33",
+        "entity2": "N34"
+      },
+      {
+        "description": "node 39 and node 40 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N39",
+        "entity2": "N40"
+      },
+      {
+        "description": "node 36 and node 37 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N36",
+        "entity2": "N37"
+      },
+      {
+        "description": "node 42 and node 49 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N42",
+        "entity2": "N49"
+      },
+      {
+        "description": "node 37 and node 44 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N37",
+        "entity2": "N44"
+      },
+      {
+        "description": "node 42 and node 43 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N42",
+        "entity2": "N43"
+      },
+      {
+        "description": "node 44 and node 45 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N44",
+        "entity2": "N45"
+      },
+      {
+        "description": "node 45 and node 46 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N45",
+        "entity2": "N46"
+      },
+      {
+        "description": "node 49 and node 50 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N49",
+        "entity2": "N50"
+      },
+      {
+        "description": "node 48 and node 49 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N48",
+        "entity2": "N49"
+      },
+      {
+        "description": "node 8 and node 9 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N08",
+        "entity2": "N09"
+      },
+      {
+        "description": "node 51 and node 52 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N51",
+        "entity2": "N52"
+      },
+      {
+        "description": "node 13 and node 14 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N13",
+        "entity2": "N14"
+      },
+      {
+        "description": "node 54 and node 55 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N54",
+        "entity2": "N55"
+      },
+      {
+        "description": "node 14 and node 21 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N14",
+        "entity2": "N21"
+      },
+      {
+        "description": "node 57 and node 58 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N57",
+        "entity2": "N58"
+      },
+      {
+        "description": "node 9 and node 16 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N09",
+        "entity2": "N16"
+      },
+      {
+        "description": "node 23 and node 24 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N23",
+        "entity2": "N24"
+      },
+      {
+        "description": "node 24 and node 31 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N24",
+        "entity2": "N31"
+      },
+      {
+        "description": "node 19 and node 26 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N19",
+        "entity2": "N26"
+      },
+      {
+        "description": "node 28 and node 29 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N28",
+        "entity2": "N29"
+      },
+      {
+        "description": "node 34 and node 41 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N34",
+        "entity2": "N41"
+      },
+      {
+        "description": "node 29 and node 36 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N29",
+        "entity2": "N36"
+      },
+      {
+        "description": "node 38 and node 39 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N38",
+        "entity2": "N39"
+      },
+      {
+        "description": "node 43 and node 44 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N43",
+        "entity2": "N44"
+      },
+      {
+        "description": "node 44 and node 51 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N44",
+        "entity2": "N51"
+      },
+      {
+        "description": "node 39 and node 46 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N39",
+        "entity2": "N46"
+      },
+      {
+        "description": "node 7 and node 8 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N07",
+        "entity2": "N08"
+      },
+      {
+        "description": "node 16 and node 23 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N16",
+        "entity2": "N23"
+      },
+      {
+        "description": "node 11 and node 18 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N11",
+        "entity2": "N18"
+      },
+      {
+        "description": "node 17 and node 18 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N17",
+        "entity2": "N18"
+      },
+      {
+        "description": "node 22 and node 23 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N22",
+        "entity2": "N23"
+      },
+      {
+        "description": "node 26 and node 33 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N26",
+        "entity2": "N33"
+      },
+      {
+        "description": "node 21 and node 28 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N21",
+        "entity2": "N28"
+      },
+      {
+        "description": "node 32 and node 33 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N32",
+        "entity2": "N33"
+      },
+      {
+        "description": "node 36 and node 43 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N36",
+        "entity2": "N43"
+      },
+      {
+        "description": "node 31 and node 38 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N31",
+        "entity2": "N38"
+      },
+      {
+        "description": "node 37 and node 38 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N37",
+        "entity2": "N38"
+      },
+      {
+        "description": "node 41 and node 48 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N41",
+        "entity2": "N48"
+      },
+      {
+        "description": "node 47 and node 48 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N47",
+        "entity2": "N48"
+      },
+      {
+        "description": "node 8 and node 15 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N08",
+        "entity2": "N15"
+      },
+      {
+        "description": "node 11 and node 12 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N11",
+        "entity2": "N12"
+      },
+      {
+        "description": "node 16 and node 17 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N16",
+        "entity2": "N17"
+      },
+      {
+        "description": "node 18 and node 25 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N18",
+        "entity2": "N25"
+      },
+      {
+        "description": "node 13 and node 20 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N13",
+        "entity2": "N20"
+      },
+      {
+        "description": "node 26 and node 27 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N26",
+        "entity2": "N27"
+      },
+      {
+        "description": "node 28 and node 35 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N28",
+        "entity2": "N35"
+      },
+      {
+        "description": "node 23 and node 30 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N23",
+        "entity2": "N30"
+      },
+      {
+        "description": "node 31 and node 32 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N31",
+        "entity2": "N32"
+      },
+      {
+        "description": "node 38 and node 45 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N38",
+        "entity2": "N45"
+      },
+      {
+        "description": "node 33 and node 40 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N33",
+        "entity2": "N40"
+      },
+      {
+        "description": "node 41 and node 42 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N41",
+        "entity2": "N42"
+      },
+      {
+        "description": "node 46 and node 47 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N46",
+        "entity2": "N47"
+      },
+      {
+        "description": "node 43 and node 50 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N43",
+        "entity2": "N50"
+      },
+      {
+        "description": "node 10 and node 11 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N10",
+        "entity2": "N11"
+      },
+      {
+        "description": "node 10 and node 17 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N10",
+        "entity2": "N17"
+      },
+      {
+        "description": "node 20 and node 21 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N20",
+        "entity2": "N21"
+      },
+      {
+        "description": "node 20 and node 27 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N20",
+        "entity2": "N27"
+      },
+      {
+        "description": "node 15 and node 22 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N15",
+        "entity2": "N22"
+      },
+      {
+        "description": "node 25 and node 26 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N25",
+        "entity2": "N26"
+      },
+      {
+        "description": "node 30 and node 37 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N30",
+        "entity2": "N37"
+      },
+      {
+        "description": "node 25 and node 32 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N25",
+        "entity2": "N32"
+      },
+      {
+        "description": "node 35 and node 36 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N35",
+        "entity2": "N36"
+      },
+      {
+        "description": "node 40 and node 41 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N40",
+        "entity2": "N41"
+      },
+      {
+        "description": "node 40 and node 47 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N40",
+        "entity2": "N47"
+      },
+      {
+        "description": "node 35 and node 42 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N35",
+        "entity2": "N42"
+      },
+      {
+        "description": "node 50 and node 51 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N50",
+        "entity2": "N51"
+      },
+      {
+        "description": "node 45 and node 52 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N45",
+        "entity2": "N52"
+      },
+      {
+        "description": "node 2 and node 9 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N02",
+        "entity2": "N09"
+      },
+      {
+        "description": "node 47 and node 54 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N47",
+        "entity2": "N54"
+      },
+      {
+        "description": "node 4 and node 11 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N04",
+        "entity2": "N11"
+      },
+      {
+        "description": "node 49 and node 56 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N49",
+        "entity2": "N56"
+      },
+      {
+        "description": "node 6 and node 13 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N06",
+        "entity2": "N13"
+      },
+      {
+        "description": "node 1 and node 8 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N01",
+        "entity2": "N08"
+      },
+      {
+        "description": "node 46 and node 53 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N46",
+        "entity2": "N53"
+      },
+      {
+        "description": "node 52 and node 53 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N52",
+        "entity2": "N53"
+      },
+      {
+        "description": "node 51 and node 58 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N51",
+        "entity2": "N58"
+      },
+      {
+        "description": "node 3 and node 10 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N03",
+        "entity2": "N10"
+      },
+      {
+        "description": "node 48 and node 55 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N48",
+        "entity2": "N55"
+      },
+      {
+        "description": "node 5 and node 12 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N05",
+        "entity2": "N12"
+      },
+      {
+        "description": "node 50 and node 57 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N50",
+        "entity2": "N57"
+      },
+      {
+        "description": "node 4 and node 5 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N04",
+        "entity2": "N05"
+      },
+      {
+        "description": "node 52 and node 59 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N52",
+        "entity2": "N59"
+      },
+      {
+        "description": "node 53 and node 54 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N53",
+        "entity2": "N54"
+      },
+      {
+        "description": "node 2 and node 3 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N02",
+        "entity2": "N03"
+      },
+      {
+        "description": "node 1 and node 2 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N01",
+        "entity2": "N02"
+      },
+      {
+        "description": "node 56 and node 57 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N56",
+        "entity2": "N57"
+      },
+      {
+        "description": "node 0 and node 7 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N00",
+        "entity2": "N07"
+      },
+      {
+        "description": "node 5 and node 6 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N05",
+        "entity2": "N06"
+      },
+      {
+        "description": "node 55 and node 56 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N55",
+        "entity2": "N56"
+      },
+      {
+        "description": "node 58 and node 59 are connected by a relation with a description long enough to matter to the budget",
+        "entity1": "N58",
+        "entity2": "N59"
+      }
+    ]
+  },
+  "tiny-chunk-budget": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      },
+      {
+        "description": "description of C",
+        "entity": "C",
+        "type": "T"
+      },
+      {
+        "description": "description of F",
+        "entity": "F",
+        "type": "T"
+      },
+      {
+        "description": "description of B",
+        "entity": "B",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  },
+  "tiny-entity-budget": {
+    "chunks": [
+      {
+        "chunkId": "ca",
+        "id": "DC1",
+        "referenceId": "1"
+      },
+      {
+        "chunkId": "c2",
+        "id": "DC2",
+        "referenceId": "2"
+      },
+      {
+        "chunkId": "ce",
+        "id": "DC3",
+        "referenceId": "3"
+      },
+      {
+        "chunkId": "c5",
+        "id": "DC4",
+        "referenceId": "4"
+      },
+      {
+        "chunkId": "c1",
+        "id": "DC5",
+        "referenceId": "5"
+      },
+      {
+        "chunkId": "c4",
+        "id": "DC6",
+        "referenceId": "6"
+      }
+    ],
+    "entities": [
+      {
+        "description": "description of A",
+        "entity": "A",
+        "type": "T"
+      },
+      {
+        "description": "description of E",
+        "entity": "E",
+        "type": "T"
+      }
+    ],
+    "references": [
+      {
+        "filePath": "a.md",
+        "referenceId": "1"
+      },
+      {
+        "filePath": "rel2.md",
+        "referenceId": "2"
+      },
+      {
+        "filePath": "e.md",
+        "referenceId": "3"
+      },
+      {
+        "filePath": "rel5.md",
+        "referenceId": "4"
+      },
+      {
+        "filePath": "rel1.md",
+        "referenceId": "5"
+      },
+      {
+        "filePath": "rel4.md",
+        "referenceId": "6"
+      }
+    ],
+    "relations": [
+      {
+        "description": "A relates to C",
+        "entity1": "A",
+        "entity2": "C"
+      },
+      {
+        "description": "E relates to F",
+        "entity1": "E",
+        "entity2": "F"
+      },
+      {
+        "description": "A relates to B",
+        "entity1": "A",
+        "entity2": "B"
+      },
+      {
+        "description": "C relates to E",
+        "entity1": "C",
+        "entity2": "E"
+      }
+    ]
+  }
+}
