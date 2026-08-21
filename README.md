@@ -27,11 +27,11 @@ The specifications the port was built from are in `akka-specify-harness` under
 📉 1,292 Python lines → **621 Java lines**<br>
 📁 802 files → **25 files**<br>
 🎯 25 of 25 questions answered identically → **25 of 25**<br>
-⚡ 978,100 → **250,400** nanoseconds, answering from both indexes<br>
-⚡ 870,600 → **113,700** nanoseconds, answering from the things index alone<br>
-⚡ 4,154,300 → **3,713,800** nanoseconds, answering over a sixty-thing graph<br>
-⚡ 43,200 → **1,400** nanoseconds, refusing a question with no keywords<br>
-🧪 not measured → **62** tests<br>
+⚡ 810,200 → **172,300** nanoseconds, answering from both indexes<br>
+⚡ 808,500 → **93,300** nanoseconds, answering from the things index alone<br>
+⚡ 3,978,300 → **3,476,500** nanoseconds, answering over a sixty-thing graph<br>
+⚡ 41,400 → **1,100** nanoseconds, refusing a question with no keywords<br>
+🧪 not measured → **63** tests<br>
 💾 not measured → not measured<br>
 🚀 not measured → not measured
 
@@ -49,11 +49,11 @@ in the specifications repository.
 
 ## What it took to build
 
-⏱️ **1.4 hours** from the first command to the published repository, **1.4** of them active<br>
-💬 **390** exchanges with the model<br>
-✍️ **425,370** tokens written by the model, **103.2M** counting everything sent and re-sent<br>
+⏱️ **1.6 hours** from the first command to the published repository, **1.6** of them active<br>
+💬 **440** exchanges with the model<br>
+✍️ **482,173** tokens written by the model, **140.1M** counting everything sent and re-sent<br>
 🙋 **0** questions to a human<br>
-🧪 **62** tests
+🧪 **63** tests
 
 ---
 

@@ -4897,6 +4897,7 @@
     "name": "arrival-orders-tied-on-rank-and-weight",
     "sequence": "arrival-orders",
     "sortKey": "rankWeight",
+    "expectsDistinctAnswers": true,
     "rows": [
       {
         "src": "P",
@@ -5011,6 +5012,7 @@
     "name": "arrival-orders-distinct-weights",
     "sequence": "arrival-orders",
     "sortKey": "rankWeight",
+    "expectsDistinctAnswers": false,
     "rows": [
       {
         "src": "P",

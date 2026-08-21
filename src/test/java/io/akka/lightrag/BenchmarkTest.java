@@ -221,6 +221,7 @@ public class BenchmarkTest {
             want.get("deliveryOrders").asInt(),
             orders.size(),
             name + ": both sides must try the same number of delivery orders");
+        var distinct = new java.util.HashSet<String>();
         for (int i = 0; i < orders.size(); i++) {
           Backend b = backend(workload, orders.get(i));
           var got = answer(RetrievalPipeline.retrieve(queryOf(workload), specOf(workload), b));
@@ -228,7 +229,19 @@ public class BenchmarkTest {
           // is the whole of it, and JsonNode equality draws exactly that line.
           assertEquals(
               want.get("answers").get(i), (JsonNode) got, name + ": delivery order " + i);
+          distinct.add(got.toString());
           compared++;
+        }
+        // A workload that ties on the sort key and still gives one answer proves nothing:
+        // it looks the same whether delivery order is ignored or whether the varied
+        // records never reached the decision that sorts. The one declared to be
+        // order-dependent has to actually move, or every other order comparison here is
+        // being read off an experiment nobody showed could fail.
+        if (workload.path("expectsDistinctAnswers").asBoolean()) {
+          assertTrue(
+              distinct.size() > 1,
+              name + ": declares that the answer moves with delivery order, and gave the "
+                  + "same answer to all " + orders.size() + " of them");
         }
         continue;
       }
